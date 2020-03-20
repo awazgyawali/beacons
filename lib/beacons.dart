@@ -9,7 +9,6 @@ import 'dart:io';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
-import 'package:streams_channel/streams_channel.dart';
 
 part 'channel/channels.dart';
 
@@ -22,6 +21,8 @@ part 'channel/param.dart';
 part 'data/beacon.dart';
 
 part 'data/beacon_region.dart';
+
+part 'stream_channel.dart';
 
 part 'data/monitoring.dart';
 

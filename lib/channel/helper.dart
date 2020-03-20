@@ -15,7 +15,6 @@ Future<dynamic> _invokeChannelMethod(
       exception: exception,
       stack: stack,
       library: 'beacons',
-      context: 'while invoking ${channel.name}/$method',
     ));
   }
 
