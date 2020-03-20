@@ -1,18 +1,14 @@
 PODS:
   - beacons (0.0.1):
     - Flutter
-    - streams_channel
   - Flutter (1.0.0)
   - flutter_local_notifications (0.0.1):
-    - Flutter
-  - streams_channel (0.2.1):
     - Flutter
 
 DEPENDENCIES:
   - beacons (from `Pods/.symlinks/plugins/beacons/ios`)
   - Flutter (from `Pods/.symlinks/flutter/ios-release`)
   - flutter_local_notifications (from `Pods/.symlinks/plugins/flutter_local_notifications/ios`)
-  - streams_channel (from `Pods/.symlinks/plugins/streams_channel/ios`)
 
 EXTERNAL SOURCES:
   beacons:
@@ -21,14 +17,11 @@ EXTERNAL SOURCES:
     :path: Pods/.symlinks/flutter/ios-release
   flutter_local_notifications:
     :path: Pods/.symlinks/plugins/flutter_local_notifications/ios
-  streams_channel:
-    :path: Pods/.symlinks/plugins/streams_channel/ios
 
 SPEC CHECKSUMS:
-  beacons: 60df21535d586bfa2a4b502f8fe20cda97f27073
+  beacons: b630b906f19575eb987678a6b0624759310b65d8
   Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
   flutter_local_notifications: 9e4738ce2471c5af910d961a6b7eadcf57c50186
-  streams_channel: 733858967fb8b62e0d63a1d03f6b8f0cb7d3bfc2
 
 PODFILE CHECKSUM: ea0518673586564c605fb6593d385c0e3708ff8d
 
