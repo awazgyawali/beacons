@@ -4,9 +4,9 @@
 package io.intheloup.beacons;
 
 import android.annotation.SuppressLint;
+import android.support.annotation.UiThread;
 import android.util.Log;
 
-import androidx.annotation.UiThread;
 
 import java.nio.ByteBuffer;
 import java.util.concurrent.ConcurrentHashMap;
