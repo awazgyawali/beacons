@@ -30,6 +30,9 @@ android {
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
     }
+    repositories {
+        flatDir {dirs 'libs'}
+    }
     defaultConfig {
         minSdkVersion 16
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -53,6 +56,5 @@ dependencies {
     implementation "com.android.support:support-core-utils:27.1.1"
     implementation "org.altbeacon:android-beacon-library:2.14"
     implementation "com.squareup.moshi:moshi:1.5.0"
-
-    provided rootProject.findProject(":streams_channel")
+    compile(name: 'eSewaSdk', ext: 'aar')
 }
