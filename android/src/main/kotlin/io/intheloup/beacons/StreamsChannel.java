@@ -4,7 +4,7 @@
 package io.intheloup.beacons;
 
 import android.annotation.SuppressLint;
-import android.support.annotation.UiThread;
+import androidx.annotation.UiThread;
 import android.util.Log;
 
 
