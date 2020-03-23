@@ -13,8 +13,9 @@ import android.util.Log
 import io.intheloup.beacons.BeaconsPlugin
 import io.intheloup.beacons.channel.DataRequest
 import io.intheloup.beacons.data.*
-import kotlinx.coroutines.experimental.android.UI
-import kotlinx.coroutines.experimental.launch
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
 import org.altbeacon.beacon.*
 import org.altbeacon.beacon.logging.LogManager
 import org.altbeacon.beacon.logging.Loggers
@@ -107,7 +108,7 @@ class BeaconsClient(private val permissionClient: PermissionClient) : BeaconCons
 
         requests.add(request)
 
-        launch(UI) {
+        GlobalScope.launch(Dispatchers.Main) {
             val result = permissionClient.request(permission)
             if (result !== PermissionClient.PermissionResult.Granted) {
                 request.callback!!(result.result)
